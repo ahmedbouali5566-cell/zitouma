@@ -1,0 +1,110 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 220"
+     width="200"
+     height="220">
+
+  <style>
+    .olive {
+      transform-origin: 100px 145px;
+      animation: jump 1.2s ease-in-out infinite;
+    }
+
+    .shadow {
+      transform-origin: 100px 185px;
+      animation: shadow 1.2s ease-in-out infinite;
+    }
+
+    @keyframes jump {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      35% {
+        transform: translateY(-45px) rotate(-8deg);
+      }
+      50% {
+        transform: translateY(-50px) rotate(0deg);
+      }
+      70% {
+        transform: translateY(-25px) rotate(8deg);
+      }
+    }
+
+    @keyframes shadow {
+      0%, 100% {
+        transform: scale(1);
+        opacity: .25;
+      }
+      50% {
+        transform: scale(.55);
+        opacity: .1;
+      }
+    }
+  </style>
+
+  <!-- Shadow -->
+  <ellipse class="shadow"
+    cx="100" cy="190"
+    rx="38" ry="8"
+    fill="#263b1d"/>
+
+  <!-- Olive -->
+  <g class="olive">
+
+    <!-- Stem -->
+    <path d="M100 48 Q108 28 119 22"
+      fill="none"
+      stroke="#65452b"
+      stroke-width="6"
+      stroke-linecap="round"/>
+
+    <!-- Leaf -->
+    <path d="M111 36
+      Q125 8 153 18
+      Q145 43 111 36Z"
+      fill="#769b39"/>
+
+    <path d="M113 35 Q132 23 148 20"
+      fill="none"
+      stroke="#456c2c"
+      stroke-width="2"/>
+
+    <!-- Fruit -->
+    <ellipse cx="97" cy="119"
+      rx="49" ry="67"
+      transform="rotate(12 97 119)"
+      fill="#668f2e"/>
+
+    <ellipse cx="91" cy="119"
+      rx="38" ry="57"
+      transform="rotate(12 91 119)"
+      fill="#83a83b"/>
+
+    <!-- Highlight -->
+    <ellipse cx="73" cy="93"
+      rx="9" ry="20"
+      transform="rotate(25 73 93)"
+      fill="#c0d77b"
+      opacity=".65"/>
+
+    <!-- Eyes -->
+    <ellipse cx="81" cy="125" rx="4" ry="6"
+      fill="#26351c"/>
+    <ellipse cx="112" cy="125" rx="4" ry="6"
+      fill="#26351c"/>
+
+    <!-- Smile -->
+    <path d="M88 140 Q97 150 107 140"
+      fill="none"
+      stroke="#26351c"
+      stroke-width="3"
+      stroke-linecap="round"/>
+
+    <!-- Cheeks -->
+    <ellipse cx="68" cy="137" rx="7" ry="4"
+      fill="#d5a15b" opacity=".65"/>
+    <ellipse cx="125" cy="137" rx="7" ry="4"
+      fill="#d5a15b" opacity=".65"/>
+
+  </g>
+</svg>

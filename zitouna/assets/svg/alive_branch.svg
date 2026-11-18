@@ -1,0 +1,71 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 200"
+     width="200" height="200">
+
+  <!-- Main branch -->
+  <path d="M25 175 Q80 120 170 25"
+        fill="none"
+        stroke="#755238"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- Leaves -->
+  <g fill="#477A43" stroke="#315D32"
+     stroke-width="1.2">
+    <path d="M48 151 Q15 143 20 116
+             Q47 119 48 151Z"/>
+    <path d="M56 143 Q48 112 72 101
+             Q81 126 56 143Z"/>
+    <path d="M76 126 Q45 112 53 88
+             Q77 96 76 126Z"/>
+    <path d="M84 116 Q83 87 109 78
+             Q112 102 84 116Z"/>
+    <path d="M104 96 Q77 79 91 57
+             Q114 72 104 96Z"/>
+    <path d="M118 83 Q119 53 146 49
+             Q144 75 118 83Z"/>
+    <path d="M137 63 Q115 41 135 22
+             Q153 43 137 63Z"/>
+    <path d="M38 164 Q17 150 8 165
+             Q23 184 38 164Z"/>
+  </g>
+
+  <!-- Leaf veins -->
+  <g fill="none" stroke="#A5C58A"
+     stroke-width="1" stroke-linecap="round">
+    <path d="M23 120 L43 145"/>
+    <path d="M73 105 L59 136"/>
+    <path d="M55 92 L71 119"/>
+    <path d="M105 82 L88 108"/>
+    <path d="M94 62 L102 88"/>
+    <path d="M142 53 L123 76"/>
+    <path d="M138 27 L137 58"/>
+  </g>
+
+  <!-- Olives -->
+  <g fill="#343C2B" stroke="#243022"
+     stroke-width="1.5">
+    <ellipse cx="63" cy="151" rx="7" ry="10"
+             transform="rotate(-35 63 151)"/>
+    <ellipse cx="91" cy="127" rx="7" ry="10"
+             transform="rotate(25 91 127)"/>
+    <ellipse cx="113" cy="105" rx="7" ry="10"
+             transform="rotate(-30 113 105)"/>
+    <ellipse cx="147" cy="72" rx="7" ry="10"
+             transform="rotate(30 147 72)"/>
+  </g>
+
+  <!-- Olive highlights -->
+  <g fill="#8C9970">
+    <ellipse cx="61" cy="148" rx="2" ry="3"
+             transform="rotate(-35 61 148)"/>
+    <ellipse cx="89" cy="124" rx="2" ry="3"
+             transform="rotate(25 89 124)"/>
+    <ellipse cx="111" cy="102" rx="2" ry="3"
+             transform="rotate(-30 111 102)"/>
+    <ellipse cx="145" cy="69" rx="2" ry="3"
+             transform="rotate(30 145 69)"/>
+  </g>
+
+</svg>

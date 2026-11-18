@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>histoire</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="assets/svg/alive_branch.svg"
+     alt="zitona"
+     width="40"
+     height="40">Zitouna</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">c</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">accuel</a>
+        <a class="nav-link" href="histoire.html">histoire</a>
+        <a class="nav-link" href="produits.html">produits</a>
+        <a class="nav-link" href="contact.html">contact</a>
+        <a class="nav-link" href="visites.html">visites</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">accuel</a></li>
+    <li class="breadcrumb-item active" aria-current="page">histoire</li>
+  </ol>
+</nav>
+</header>
+<body>
+  <!--Introduction-->
+    
+     <h1>De l'arbre au moulin, depuis 1987</h1>
+     <section class="my-5 intro-cols " aria-labelledby="intro-title">
+      <div class=" w-75">
+      <h2 id="intro-title" class="visually-hidden">Introduction</h2>
+      <p>La coopérative Zitouna est née de la volonté de douze familles du Sahel tunisien de mutualiser leurs récoltes et de maîtriser la qualité de leur huile. Aujourd'hui, 42 producteurs partagent le même moulin moderne à extraction à froid et les mêmes exigences de traçabilité.</p>
+      <p>Chaque olive est récoltée à maturité optimale, transportée en caisses ajourées et pressée dans les heures qui suivent. Ce savoir-faire, transmis de génération en génération, donne une huile au fruité intense, faible en acidité et riche en polyphénols.</p>
+       </div>  
+    </section>
+   
+    <!--Frise chronologique-->
+     <div class="mt-4 mb-4">
+          <h1>Frise chronologique</h1>
+          <div class="mr-4 border border-warning border-5 border-bottom-0 border-end-0 border-top-0">
+           <ul>
+             <li>
+                <time>1987</time>
+                <h3>Fondation</h3>
+                <p>Douze familles mettent en commun leur récolte et construisent le premier moulin.</p>
+             </li>
+             <li>
+                <time>1998</time>
+                <h3>Certification Bio</h3>
+                <p>Premiers vergers certifiés agriculture biologique</p>
+             </li>
+             <li>
+                <time>2005</time>
+                <h3>Nouveau moulin</h3>
+                <p>Installation d'une ligne d'extraction à froid ultra-moderne.</p>
+             </li>
+             <li>
+                <time>2015</time>
+                <h3>Export Europe</h3>
+                <p></p>
+             </li>
+             <li>
+                <time>2020</time>
+                <h3>Agritourisme</h3>
+                <p>Premiers contrats avec des importateurs allemands et français.</p>
+             </li>
+             <li>
+                <time>2026</time>
+                <h3>42 familles</h3>
+                <p>La coopérative compte désormais 42 producteurs et exporte vers 12 pays.</p>
+             </li>
+         </ul>
+         </div>
+     </div>
+    <!--Image flottante-->
+    <div class="clearfix">
+  <img src="assets/img/ceo.png" class="col-md-6 float-md-end mb-3 ms-md-3 w-25" alt="...">
+ <p>
+    Ahmed Bouali, agriculteur et visionnaire, a convaincu ses voisins de mutualiser leurs moyens pour garantir une qualité constante. Son portrait orne encore le hall d'entrée du moulin.
+  </p>
+
+  <p>
+    « L'huile n'est pas un produit, c'est le fruit d'une année de travail et de patience. »
+  </p>
+</div>
+<!--Graphique de production-->
+      <section class="my-5" aria-labelledby="chart-title">
+      <h2 id="chart-title">Évolution de la production</h2>
+      <canvas id="production-chart" width="600" height="300" aria-label="Histogramme de production d'huile d'olive sur 6 campagnes"></canvas>
+      <table class="visually-hidden">
+        <caption>Production annuelle en tonnes</caption>
+        <thead><tr><th>Campagne</th><th>Tonnes</th></tr></thead>
+        <tbody>
+          <tr><td>2020/21</td><td>95</td></tr>
+          <tr><td>2021/22</td><td>120</td></tr>
+          <tr><td>2022/23</td><td>145</td></tr>
+          <tr><td>2023/24</td><td>160</td></tr>
+          <tr><td>2024/25</td><td>172</td></tr>
+          <tr><td>2025/26</td><td>180</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <script src="assets/js/canvas-chart.js"></script>
+</body>
+<footer>
+        <div>
+            <div class="row g-4 mt-4 mb-4">
+                <div class="col">
+                            <h5>Zitouna</h5>
+                            <p>Coopérative oléicole & agritourisme.42 familles, un terroir, une passion.</p>
+                </div>
+                <div class="col">
+                            <h5>Plan du site</h5>
+                            <a href="histoire.html">histoire</a><br>
+                            <a href="produits.html">produits</a><br>
+                            <a href="contact.html">contact</a><br>
+                            <a href="visites.html">visites</a><br>
+                </div>
+                <div class="col">
+                            <h5>Coordonnées</h5>
+                            <p>Coopérative Zitouna</p>
+                            <p>Route de l'Oliveraie, km 12</p>
+                            <p>kairoun, Tunisie</p>
+                            <a href="mail:contact@zitouna.tn">contact@zitouna.tn</a><br>
+                            <a href="tel:+216 99 999 999">+216 99 999 999</a>
+                </div>
+                <div class="col">
+                            <h5>Newsletter</h5>
+                            <p>Recevez nos actualités (maquette).</p>
+                            <input type="email" placeholder="votre@email.com"><button>ok</button>
+                </div>
+               
+            </div>
+    </div>
+</footer>
+</html>
